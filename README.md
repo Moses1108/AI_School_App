@@ -1,1 +1,1 @@
-# AI_School_App
+# AI-Education-Platform
