@@ -5,7 +5,7 @@ const FinalViewPage = ({ prompt, chapters, navigateTo, content, setContent }) =>
     useEffect(() => {
         const fetchContent = async (chapterName, subchapterName) => {
             try {
-                const response = await fetch('http://localhost:5000/generate-content', {
+                const response = await fetch('https://ai-course-generation-backend.vercel.app/generate-content', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
