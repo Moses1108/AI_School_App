@@ -9,7 +9,7 @@ const CourseOutlinePage = ({ prompt, navigateTo, setChapters }) => {
         const fetchOutline = async () => {
             setIsLoading(true);
             try {
-                const response = await fetch('http://localhost:5000/generate-chapters', {
+                const response = await fetch('https://ai-course-generation-backend.vercel.app/generate-chapters', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
