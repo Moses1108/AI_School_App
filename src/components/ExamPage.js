@@ -10,7 +10,7 @@ const ExamPage = ({ chapterName, subchapterName, prompt, navigateTo }) => {
     useEffect(() => {
         const fetchExamQuestions = async () => {
             try {
-                const response = await fetch('http://localhost:5000/generate-exam', {
+                const response = await fetch('https://ai-course-generation-backend.vercel.app/generate-exam', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -37,7 +37,7 @@ const ExamPage = ({ chapterName, subchapterName, prompt, navigateTo }) => {
 
     const handleSubmitExam = async () => {
         try {
-            const response = await fetch('http://localhost:5000/evaluate-exam', {
+            const response = await fetch('https://ai-course-generation-backend.vercel.app/evaluate-exam', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
